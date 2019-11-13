@@ -1,0 +1,129 @@
+/* # - #5e675b  Outer Space */
+
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+	background: #5e675b;
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+	background: white;
+	line-height: 1.4;
+	overflow: auto;
+}
+
+.container:before {
+    content: " ";
+    display: block;
+    padding-top: 100%; /*利用padding来撑开*/
+}
+
+.container {
+    position: relative;
+    width: 40%;
+    margin-right: 3%;
+    margin-top: 5%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+    float: left;
+}
+
+.container .content {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+}
+
+.button_container {
+	width: 50%;
+	margin-top: 5vw;
+	float: left;
+}
+
+.button_container button {
+	padding: .5em 1em;
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #E95D0F;
+    background: white ;
+    border: 2px solid #E95D0F;
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    outline: none;
+    /*display: block;
+    text-align: center;
+    outline: none;
+    font-size:15px;
+    background-color: #1e2835;
+    border-color: #404853;
+    cursor:pointer;
+    background-image: linear-gradient(to bottom,rgba(246,246,246,.1)0%,rgba(30,40,53,0)66%);
+    color: #fafafa;*/
+  }
+
+.button_container button:hover {
+	color: white;
+    background-color: #E95D0F;
+}
+
+.ripple {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #666 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .3s, opacity .5s;
+}
+
+.ripple:active:after {
+    transform: scale(0, 0);
+    opacity: .3;
+    transition: 0s;
+}
+
+.digit_btn {
+	clear: both;
+	width: 50%;
+	margin-left: 5%;
+}
+
+.digit_btn button{
+	background: transparent;
+	color: green;
+	border: transparent;
+	cursor: pointer;
+	outline: none;
+	font-size: 3vw;
+}
+
+#canvas {
+	width: 100%;
+	height: 100%;
+	
+	border: 2px solid black;
+}
