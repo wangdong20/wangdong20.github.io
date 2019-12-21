@@ -1,0 +1,142 @@
+/* Color Palette
+# - rgb(67,77,84)  For header
+# - #5e675b  Outer Space
+# - #fce835  Laser Lemon
+# - #708090 For html
+*/
+
+/* Global styles */
+html {
+  box-sizing: border-box;
+}
+html, body {
+	background: #5e675b; /* Beccapurple */
+	margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+	background: white;
+	line-height: 1.4;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: auto;
+}
+
+/* main {
+  clear: both;
+}
+ */
+h1 {
+  margin: 0;
+  font-family: 'Damion', cursive;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Sofadi One', cursive;
+}
+
+header, footer {
+  padding: 0 0 2.5%;
+  background: rgb(67,77,84);
+  color: white;
+}
+
+/* header {
+  overflow: auto;
+} */
+
+.profile-img {
+  border-radius: 50%;
+  max-width: 100%;
+/*   width: 300px; */
+/*   float: left;
+  margin-right: 30px; */
+}
+
+
+.column-narrow {
+  width: 30%; 
+  float: left;
+  padding-right: 3%; 
+  min-height: 175px;
+}
+
+.column-wide {
+  width: 70%; 
+  float: left;
+  min-height: 225px;
+}
+
+.contact_info a {
+  display: inline-block;
+  padding: 10px;
+}
+
+.contact_info a:link, a:visited {
+  text-decoration: none;
+  color: #fce835; 
+}
+
+.contact_info a:hover, a:active {
+  text-decoration: underline;
+  color: cyan;
+}
+
+nav {
+  margin: 0 auto 5px;
+  text-align: center;
+  position: fixed;
+  background: rgb(67,77,84);
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover, a:active {
+  text-decoration: underline;
+  color: white;
+}
+
+footer {
+  text-align: center;
+}
+
+#Education {
+  background: linear-gradient(rgba(70,130,180, 0.5),
+                 rgba(70,130,180, 0.5)),
+                 url(https://images.unsplash.com/photo-1568274602483-355d7fbba69c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2555&q=80) no-repeat;
+  background-size: cover;
+}
+
+
+
+
+/* Work Experience
+------------------------------------*/
+
+
+
+/* Education
+------------------------------------*/
