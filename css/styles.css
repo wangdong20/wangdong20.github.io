@@ -68,6 +68,9 @@ header, footer {
   margin-right: 30px; */
 }
 
+.app-img {
+  max-width: 100%;
+}
 
 .column-narrow {
   width: 30%; 
