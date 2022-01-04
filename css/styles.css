@@ -101,19 +101,30 @@ header, footer {
   color: cyan;
 }
 
-.support_link a {
-  display: inline-block;
-  padding: 5px;
+
+.btn {
+  border: none; /* Remove borders */
+  border-radius: 8px;
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
 }
 
-.support_link a:link, a:visited {
-  text-decoration: none;
-  color: #fce835; 
+.paypal_btn {
+  background-color: DodgerBlue;
 }
 
-.support_link a:hover, a:active {
-  text-decoration: underline;
-  color: cyan;
+.paypal_btn:hover {
+  background-color:  RoyalBlue;
+}
+
+.patreon_btn {
+  background-color: coral;
+}
+
+.patreon_btn:hover {
+  background-color: orangered;
 }
 
 nav {
