@@ -101,6 +101,21 @@ header, footer {
   color: cyan;
 }
 
+.support_link a {
+  display: inline-block;
+  padding: 5px;
+}
+
+.support_link a:link, a:visited {
+  text-decoration: none;
+  color: #fce835; 
+}
+
+.support_link a:hover, a:active {
+  text-decoration: underline;
+  color: cyan;
+}
+
 nav {
   margin: 0 auto 5px;
   text-align: center;
