@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Damion|Sofadi+One&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/jquery.i18n.properties.js" defer></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link rel="stylesheet" href="css/styles.css" type="text/css" >
     <link rel="icon" href="images/page_icon.png">
@@ -13,9 +16,9 @@
     <!-- // Intro -->
     <header>
       <nav>
-        <a href="#about">About</a>
-        <a href="#Apps">Apps</a>
-        <a href="#contact">Contact</a>
+        <a id="a_about" href="#about">About</a>
+        <a id="a_apps" href="#Apps">Apps</a>
+        <a id="a_contact" href="#contact">Contact</a>
       </nav>
       <div class="content-wrap" id="about"> 
 <!--         <div class="column-narrow"> -->
@@ -24,11 +27,11 @@
              alt="Dong Wang" class="profile-img">
         </div>
         <div class="column-wide">
-          <h1>Dong Wang</h1>
-          <h2>Indie game developer</h2>
-          <p>My name is Dong Wang<cn>/王栋</cn>. I am from China. I am a indie game developer so far. I am mainly focusing on iOS and Android mobile game development currently. Hope my works bring happiness to you.</p>
-          <button class="btn patreon_btn" onclick="window.open('https://www.patreon.com/bePatron?u=67274693','_blank')"><i class="fab fa-patreon"></i> Become a Patron!</button>
-          <button class="btn paypal_btn" onclick="window.open('https://paypal.me/wangdong20','_blank')"><i class="fab fa-paypal"></i> Support me on Paypal!</button>
+          <h1 id="my_name">Dong Wang</h1>
+          <h2 id="my_title">Indie game developer</h2>
+          <p id="self_introduction">My name is Dong Wang<cn>/王栋</cn>. I am from China. I am a indie game developer so far. I am mainly focusing on iOS and Android mobile game development currently. Hope my works bring happiness to you.</p>
+          <button id="bePatron" class="btn patreon_btn" onclick="window.open('https://www.patreon.com/bePatron?u=67274693','_blank')"><i class="fab fa-patreon"></i> Become a Patron!</button>
+          <button id="support_on_paypal" class="btn paypal_btn" onclick="window.open('https://paypal.me/wangdong20','_blank')"><i class="fab fa-paypal"></i> Support me on Paypal!</button>
         </div>
       </div>
     </header>
@@ -40,7 +43,7 @@
           <div class="content-wrap">
             <div class="column-narrow"> 
               <img src="images/sudoku_1024.png" class="app-img">
-            <h3>Sudoku - puzzle generator</h3>
+            <h3 id="sudoku_app_name">Sudoku - puzzle generator</h3>
 
             <!-- Job Details: copy this whole block to add more jobs -->
             </div>
@@ -56,7 +59,7 @@
           <div class="content-wrap">
             <div class="column-narrow"> 
               <img src="images/battleship_1024.png" class="app-img">
-            <h3>Sea Battle: Multiplayer Game</h3>
+            <h3 id="battleship_app_name">Sea Battle: Multiplayer Game</h3>
             </div>
             <div class="column-wide">
                 <a href="https://apps.apple.com/us/app/id1579161467"><img alt='Download it on App Store' src="images/appstore_badge.svg" width="50%"/></a>
@@ -68,7 +71,7 @@
           <div class="content-wrap">
             <div class="column-narrow"> 
               <img src="images/finger_dancer_1024.png" class="app-img">
-            <h3>Finger Dancer</h3>
+            <h3 id="fingerdancer_app_name">Finger Dancer</h3>
             </div>
             <div class="column-wide">
                 <a href="https://apps.apple.com/us/app/id1614997253"><img alt='Download it on App Store' src="images/appstore_badge.svg" width="50%"/></a>
@@ -79,7 +82,7 @@
           <div class="content-wrap">
             <div class="column-narrow"> 
               <img src="images/fruit_slot_machine_1024.png" class="app-img">
-            <h3>Fruit Slots - Casino Games</h3>
+            <h3 id="fruitslotmachine_app_name">Fruit Slots - Casino Game</h3>
             </div>
             <div class="column-wide">
             	<a href='https://play.google.com/store/apps/details?id=com.wangdong20.app.fruitslotmachine&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="57%" /></a>
@@ -101,12 +104,12 @@
             <i class="fab fa-facebook-square"></i>
             <a href="https://www.facebook.com/%E5%B0%8F%E7%8E%8B%E5%BC%80%E5%8F%91%E7%9A%84%E6%B8%B8%E6%88%8F-106255341756098" target="_blank">Facebook</a>
             <i class="fab fa-patreon"></i>
-            <a href="https://www.patreon.com/bePatron?u=67274693" target="_blank">Become a Patron!</a>
+            <a id="bottom_bePatron" href="https://www.patreon.com/bePatron?u=67274693" target="_blank">Become a Patron!</a>
             <i class="fab fa-paypal"></i>
-            <a href="https://paypal.me/wangdong20" target="_blank">Support me on Paypal!</a>
+            <a id="bottom_supportPaypal" href="https://paypal.me/wangdong20" target="_blank">Support me on Paypal!</a>
         </div>
 
-        <p>Copyright 2019 by Dong Wang</p>
+        <p id="copyright">Copyright 2019 by Dong Wang</p>
     </footer>
 </body>
 </html>
