@@ -96,3 +96,4 @@ meitu.com, 699, RESELLER
 mintegral.com, 10038, RESELLER
 reforge.in, 107, RESELLER
 reforge.in, 353, RESELLER
+applovin.com, 70cb6362dd7d7e65c7a78a5fcc709b95, DIRECT
