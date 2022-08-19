@@ -22,7 +22,6 @@ function loadProperties() {
 			$('#fingerdancer_app_name').text($.i18n.prop('string_fingerdancer_app_name'));
 			$('#fruitslotmachine_app_name').text($.i18n.prop('string_fruitslotmachine_app_name'));
 			$('#contact').text($.i18n.prop('string_keep_in_touch'));
-			$('#bottom_bePatron').text($.i18n.prop('string_bottom_bePatron'));
 			$('#bottom_supportPaypal').text($.i18n.prop('string_bottom_supportPaypal'));
 			$('#copyright').text($.i18n.prop('string_copyright'));
 		}
