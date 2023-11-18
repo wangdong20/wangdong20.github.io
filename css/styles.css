@@ -101,6 +101,20 @@ header, footer {
   color: cyan;
 }
 
+.privacy a, p {
+  display: inline-block;
+  padding: 10px;
+}
+
+.privacy  a:link, a:visited {
+  text-decoration: none;
+  color: #fce835; 
+}
+
+.privacy a:hover, a:active {
+  text-decoration: underline;
+  color: cyan;
+}
 
 .btn {
   border: none; /* Remove borders */
