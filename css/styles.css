@@ -10,8 +10,8 @@ html {
   box-sizing: border-box;
 }
 html, body {
-	background: #5e675b; /* Beccapurple */
-	margin: 0;
+  background: black;
+	margin: 16;
 }
 
 *, *:before, *:after {
@@ -21,11 +21,10 @@ html, body {
 body {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 100%;
-	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 0;
-	background: white;
+	background: black;
 	line-height: 1.4;
   overflow: auto;
 }
@@ -35,6 +34,7 @@ body {
   margin: 0 auto;
   padding: 50px;
   overflow: auto;
+  background: #121212;
 }
 
 /* main {
@@ -51,9 +51,13 @@ h2 {
   font-family: 'Sofadi One', cursive;
 }
 
+h3 {
+  color: white;
+}
+
 header, footer {
   padding: 0 0 2.5%;
-  background: rgb(67,77,84);
+  background: black;
   color: white;
 }
 
