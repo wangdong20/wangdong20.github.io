@@ -12,6 +12,7 @@ html {
 html, body {
   background: black;
 	margin: 16;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
